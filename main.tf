@@ -14,7 +14,7 @@ config_path = "~/.kube/config"
 variable "flask_code" {
   type = string
   default = <<EOT
-from flask import Flask
+from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/')
